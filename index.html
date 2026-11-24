@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#082b4c">
+  <meta name="description" content="Maragogi Explorer — descubra as belezas de Maragogi.">
+  <title>Maragogi Explorer | Cartão Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="card" aria-label="Cartão digital Maragogi Explorer">
+      <div class="top-glow"></div>
+      <header class="brand">
+        <div class="logo-wrap">
+          <img src="assets/logo-maragogi.jpg" alt="Logo Maragogi Explorer" class="logo">
+        </div>
+        <p class="kicker">EXPERIÊNCIAS EM MARAGOGI</p>
+        <h1>Maragogi <span>Explorer</span></h1>
+        <p class="intro">Explore as belezas de Maragogi com a gente.</p>
+        <div class="location"><span class="pin">⌖</span> MARAGOGI · ALAGOAS</div>
+      </header>
+
+      <nav class="actions" aria-label="Acessos">
+        <a class="action instagram" href="https://www.instagram.com/maragogi_explorer/" target="_blank" rel="noopener noreferrer">
+          <span class="action-icon">◎</span><span class="action-copy"><strong>Instagram</strong><small>Acompanhe nossas experiências</small></span><span class="arrow">↗</span>
+        </a>
+        <a class="action review" href="https://search.google.com/local/writereview?placeid=ChIJy3SZ-VD1AAcRG1-1rCxEX3o" target="_blank" rel="noopener noreferrer">
+          <span class="action-icon">★</span><span class="action-copy"><strong>Avalie no Google</strong><small>Sua opinião é muito importante para nós</small></span><span class="arrow">↗</span>
+        </a>
+        <button class="action pix" id="copyPix" type="button">
+          <span class="action-icon">▣</span><span class="action-copy"><strong>Copiar chave Pix</strong><small>82993378933</small></span><span class="arrow">⧉</span>
+        </button>
+        <button class="action qr" id="showQr" type="button">
+          <span class="action-icon">▦</span><span class="action-copy"><strong>Ver QR Code Pix</strong><small>Escaneie para realizar o pagamento</small></span><span class="arrow">↗</span>
+        </button>
+      </nav>
+
+      <footer>
+        <p>Obrigado pela preferência!</p>
+        <span>Um paraíso espera por você.</span>
+      </footer>
+    </section>
+    <div class="signature">CARTÃO DIGITAL <b>JL CRIATIVA</b></div>
+  </main>
+
+  <div class="modal" id="qrModal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="qrTitle">
+      <button class="close" id="closeQr" aria-label="Fechar">×</button>
+      <p class="modal-kicker">PAGAMENTO VIA PIX</p>
+      <h2 id="qrTitle">QR Code Pix</h2>
+      <p class="modal-description">Aponte a câmera do seu banco para o código abaixo.</p>
+      <img src="assets/qr-pix.jpg" alt="QR Code Pix do Maragogi Explorer" class="qr-image">
+      <p class="pix-key">Chave Pix: <strong>82993378933</strong></p>
+      <button class="copy-small" id="copyPixModal" type="button">Copiar chave Pix</button>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
